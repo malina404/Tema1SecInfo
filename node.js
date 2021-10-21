@@ -81,8 +81,8 @@ class node {
         let cryptedArray = [];
         let chunks = [];
 
-        for (var i = 0, charsLength = text.length; i < charsLength; i += 16) {
-            chunks.push(text.substring(i, i + 16));
+        for (var i = 0, charsLength = text.length; i < charsLength; i += 8) {
+            chunks.push(text.substring(i, i + 8));
         }
 
         chunks.forEach((chunk, index) => {
